@@ -11,7 +11,7 @@ const router = express.Router()
 router.get('/', (req, res, next) => {
 	cars.getAll().then(
 		result => {
-			res.status(200).json(result ?? [])
+			res.status(200).json(result || [])
 		}, error => next(error)
 	)
 })
