@@ -32,8 +32,8 @@ const checkCarPayload = (req, res, next) => {
     make: req.body.make,
     model: req.body.model,
     mileage: req.body.mileage,
-    title: req.body.title ?? null,
-    transmission: req.body.transmission ?? null
+    title: req.body.title,
+    transmission: req.body.transmission
   }
 
   next();
